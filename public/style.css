@@ -46,6 +46,32 @@ textarea {
     outline: none;
     background: #c7c5c5;
 }
+.bg-image {
+   
+  
+   
+    /* Full height */
+    height: 8%;
+    max-width:10%;
+  
+    /* Center and scale the image nicely */
+  
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    
+    color: white;
+    font-weight: bold;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+    
+    text-align: center;
+  }
+  
 
 .message {
     padding: 20px; 
@@ -106,21 +132,55 @@ a {
 	text-decoration: none;
 }
 
-.btn {
-	cursor: pointer;
-	padding: 5px 15px;
-	background: #0a0a23;
-	
-	border: 0;
-	font-size: 17px;
-	
-		
-		color: #fff;
-		border:none; 
-		border-radius:10px; 
-		
-		
+
+
+/* Welcome to messenger */
+.copy {
+    text-align: center;
+    margin: 20px 0;
 }
+.copy h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hello {{naming}} */
+.hello {
+    text-align: center;
+    margin: 20px 0;
+}
+.hello h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+	margin-top: 200px; /* adds a margin top to move the text down */
+	margin-right: 300px;
+}
+
+/* Join Chat button */
+.btn {
+    text-align: center;
+    margin: 20px 0;
+}
+.btn a {
+    text-decoration: none;
+}
+.btn button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn button:hover {
+    background-color: #0a0a23;
+}
+
 
 /* Chat Page */
 
@@ -169,7 +229,11 @@ a {
 	padding: 10px 0;
 }
 
+.time {
+font-size: 12px;
 
+text-align: center;
+}
 
 
 
@@ -191,7 +255,7 @@ a {
 }
 
 .join-main {
-	padding: 30px 40px;
+	padding: 40px 50px;
 	background: var(--dark-color-b);
 }
 
@@ -208,12 +272,8 @@ a {
 	margin-bottom: 5px;
 }
 
-.join-main input[type='text'] {
-	font-size: 16px;
-	padding: 5px;
-	height: 40px;
-	width: 100%;
-}
+
+
 
 .join-main select {
 	font-size: 16px;
@@ -222,10 +282,7 @@ a {
 	width: 100%;
 }
 
-.join-main .btn {
-	margin-top: 20px;
-	width: 100%;
-}
+
 
 @media (max-width: 700px) {
 	.chat-main {

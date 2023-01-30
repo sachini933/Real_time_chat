@@ -2,6 +2,11 @@ const socket = io()
 
 let textarea = document.querySelector('#textarea')
 let messageArea = document.querySelector('.message__area')
+do {
+    name = prompt('Please enter your name: ')
+} while(!name)
+
+
 
 
 
@@ -16,6 +21,21 @@ function sendMessage(message) {
         user: name,
         message: message.trim()
     }
+    let textarea = document.getElementById('textarea');
+let messageArea = document.querySelector('.message__area');
+
+textarea.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        const message = textarea.value;
+        const currentTime = new Date();
+        const timeString = currentTime.toLocaleTimeString();
+        messageArea.innerHTML += `<div> <div class="message">${message}</div><div class="time">${timeString}</div></div>`;
+
+        // Clear the textarea
+        textarea.value = '';
+    }
+});
+
     // Append 
     appendMessage(msg, 'outgoing')
     textarea.value = ''
@@ -50,3 +70,4 @@ socket.on('message', (msg) => {
 function scrollToBottom() {
     messageArea.scrollTop = messageArea.scrollHeight
 }
+

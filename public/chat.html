@@ -27,11 +27,25 @@
             
             <div class="message__area"></div>
             <div>
+              
+              
+
                 <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+                <button type="button" id="emoji-button">😀</button>
+                <input type="file" id="image-input" accept="image/*">
+                
+            
                 
             </div>
         </section>
-          <div class="chat-messages"></div>
+          <div class="chat-messages">
+            <div class="time"></div>
+          
+
+          <div class="chat-messages">
+            
+          </div>
+          
           
         </main>
         
@@ -39,7 +53,12 @@
           
         
       </div>
-  
+      
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/client.js"></script>
 </body>
