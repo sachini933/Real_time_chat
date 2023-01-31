@@ -5,7 +5,7 @@
 body{
     display: grid;
     place-items: center;
-    background-color: #434b68;
+    background-color: #767f9e;
 }
 
 h1,h3{
@@ -31,5 +31,6 @@ form{
     text-align: center;
     border: 5px solid rgb(111, 70, 23);
     padding: 20px;
+    margin-bottom: 20px;
     background-color: #0a0a23;
 }
